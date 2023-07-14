@@ -1,0 +1,69 @@
+/* Global styles applying to all elements */
+* {
+  margin: 0; /* Removing the default margin */
+  padding: 0; /* Removing the default padding */
+  box-sizing: border-box; /* Ensuring padding and border are included in an element's total width and height */
+}
+
+body {
+  display: flex; /* Applying flexbox layout */
+  flex-direction: column; /* Aligning children vertically */
+  justify-content: center; /* Centering children vertically */
+  align-items: center; /* Centering children horizontally */
+  height: 100vh; /* Full viewport height */
+  background-color: #f5f5f5; /* Light grey background for better contrast */
+}
+
+/* Styling for the main heading */
+h1 {
+  text-align: center; /* Center align the title */
+  padding: 20px; /* Add padding to the title */
+  color: #333; /* Color of the title */
+}
+
+/* Styling for the label elements */
+label {
+  margin-top: 20px; /* Add space above labels */
+  color: #555; /* Color of the label */
+}
+
+/* Setting display property for labels and inputs */
+label,
+input {
+  display: block; /* Make labels and inputs take up full width available */
+}
+
+/* Styling for input fields */
+input {
+  width: 100%; /* Making input fields take full width of the parent */
+  padding: 10px; /* Add padding to the inputs */
+  margin-top: 5px; /* Add some space above the input fields */
+  border-radius: 5px; /* Rounded corners for the input fields */
+}
+
+/* Styling for the submit button */
+input[type="button"] {
+  margin: 20px auto; /* Centering the submit button with automatic horizontal margin and 20px margin on top */
+  padding: 10px; /* Add padding to the button */
+  width: 40%; /* Making submit button width 40% of parent */
+  background-color: #4caf50; /* Button color */
+  border: none; /* Remove border */
+  color: white; /* Text color */
+  cursor: pointer; /* Cursor pointer when hovering */
+  border-radius: 5px; /* Rounded corners for the button */
+}
+
+input[type="button"]:hover {
+  background-color: #45a049; /* Darken button color on hover */
+}
+
+/* Styling for the form */
+form {
+  min-width: 300px; /* Minimum width of form */
+  max-width: 500px; /* Maximum width of form */
+  margin: 20px auto; /* Centering the form with automatic horizontal margin and 20px margin on top */
+  border: 2px solid #000; /* Adding border to form */
+  padding: 20px; /* Padding inside form */
+  border-radius: 10px; /* Rounded corners for the form */
+  background-color: #f6fbf3; /* White background color for form */
+}

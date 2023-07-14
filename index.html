@@ -1,0 +1,64 @@
+<!-- The main structure of the webpage -->
+<!DOCTYPE html>
+<html lang="en">
+  <!-- Head Section of the webpage -->
+  <head>
+    <!-- Character encoding for the document -->
+    <meta charset="UTF-8" />
+
+    <!-- Control layout on mobile browsers -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Title of the webpage -->
+    <title>Web To Lead Or Case Form</title>
+
+    <!-- Link to the external stylesheet (CSS file) -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Link to the external JavaScript file -->
+    <script src="script.js" defer></script>
+  </head>
+
+  <!-- Body Section of the webpage -->
+  <body>
+    <!-- The main title of the webpage -->
+    <h1>Sign Up for Coding Class!</h1>
+
+    <!-- Form to collect user data -->
+    <form
+      action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8"
+      method="POST"
+      id="signupForm"
+    >
+      <!-- Hidden input fields for Salesforce integration -->
+      <input type="hidden" name="oid" value="00D8e000000SyTa" />
+      <input type="hidden" name="retURL" value="https://web-to-lead-form.netlify.app/thankyou.html" />
+      <input type="hidden" name="Date_Of_Birth__c" id="Date_Of_Birth__c" />
+
+      <!-- Input field for the First Name -->
+      <label for="first_name">First Name</label>
+      <input id="first_name" name="first_name" size="20" type="text" required />
+
+      <!-- Input field for the Last Name -->
+      <label for="last_name">Last Name</label>
+      <input id="last_name" name="last_name" size="20" type="text" required />
+
+      <!-- Input field for the Email -->
+      <label for="email">Email</label>
+      <input id="email" name="email" size="20" type="text" required />
+
+      <!-- Input field for the Date of Birth -->
+      <label for="date-of-birth">Date Of Birth</label>
+      <input type="date" id="date-of-birth" required />
+
+      <!-- Submit button -->
+      <input
+        type="button"
+        name="submitForm"
+        onclick="beforeSubmit()"
+        value="Submit"
+        required
+      />
+    </form>
+  </body>
+</html>
